@@ -94,7 +94,7 @@ export default function ProfileScreen() {
         {/* SEE MORE BUTTON */}
         <TouchableOpacity
           onPress={
-            () => navigation.navigate('Quotes') // Çalışıyor
+            () => navigation.navigate('Quotes')
           }
           style={styles.seeMoreButton}>
           <Text style={styles.seeMoreText}>See More</Text>

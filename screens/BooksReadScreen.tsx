@@ -33,7 +33,7 @@ export default function BooksReadScreen() {
           style={styles.bookCard}
           onPress={() =>
             navigation.navigate('BookDetail', {
-              bookTitle: b.title, // ← Artık ID değil, bookTitle gönderiyoruz
+              bookTitle: b.title,
             })
           }>
           <Text style={styles.title}>{b.title}</Text>

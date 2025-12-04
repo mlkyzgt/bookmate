@@ -9,7 +9,7 @@ export default function QuotesSavedScreen() {
   // kullanıcının kayıtlı alıntıları getirilecek.
   // ------------------------------------------------------------
 
-  // ŞU ANKİ DURUM: Mock – veri olmadığı için geçici placeholder
+  // Geçici placeholder
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Quotes Saved Screen (Mock)</Text>

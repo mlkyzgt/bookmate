@@ -14,9 +14,9 @@ export default function LoginScreen() {
   const [password, setPassword] = useState('');
 
   /*
-    • Email + password backend'e POST edilecek  
-    • Başarılıysa token kaydedilecek  
-    • Sonra Home ekranına yönlendirilecek  
+    - Email + password backend'e POST edilecek  
+    - Başarılıysa token kaydedilecek  
+    - Sonra Home ekranına yönlendirilecek  
 
     Bu proje demo olduğu için şimdilik navigation.replace('Home') çalışıyor.
   */

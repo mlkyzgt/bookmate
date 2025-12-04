@@ -33,7 +33,11 @@ export default function BooksReadScreen() {
           style={styles.bookCard}
           onPress={() =>
             navigation.navigate('BookDetail', {
+<<<<<<< HEAD
               bookTitle: b.title,
+=======
+              bookTitle: b.title, 
+>>>>>>> 11e811fdad3bd5c60d44caba06fae0ed13817591
             })
           }>
           <Text style={styles.title}>{b.title}</Text>

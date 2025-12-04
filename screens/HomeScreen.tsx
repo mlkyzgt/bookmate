@@ -68,7 +68,7 @@ export default function HomeScreen() {
       </Text>
 
       {/* ------------------------------------------------------------
-          progress kullanıcıya özel olacak, burada örnek gizlendi
+          progress kullanıcıya özel olacak
          ------------------------------------------------------------ */}
       {book.progress && (
         <View style={{marginTop: 6}}>

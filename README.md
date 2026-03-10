@@ -1,65 +1,69 @@
-# Bookmate – Yapay Zeka Destekli Kitap Asistanı
+# Bookmate – AI-Powered Book Assistant
 
-**Bookmate**, okuyucuların kütüphanelerini dijital ortamda yönetmelerini, okudukları kitaplardan önemli alıntıları saklamalarını ve **yapay zeka desteğiyle** yeni kitaplar keşfetmelerini sağlayan bir **React Native mobil uygulamasıdır**.
-
----
-
-## Temel Özellikler
-
-- **Kütüphane Yönetimi**  
-  Google Books API entegrasyonu ile kitap arama ve kişisel kütüphaneye ekleme.
-
-- **Alıntı Defteri**  
-  Kitaplara özel alıntıların CRUD işlemleri (Ekleme, Listeleme, Güncelleme, Silme) ile yönetimi.
-
-- **Yapay Zeka Önerileri**  
-  Groq API (Llama 3 70B) kullanılarak, kullanıcının kütüphanesine ve okuma zevklerine göre kişiselleştirilmiş kitap tavsiyeleri.
-
-- **Gerçek Zamanlı Senkronizasyon**  
-  Verilerin Cloud Firestore ile tüm cihazlar arasında anlık olarak senkronize edilmesi.
-
-- **Profil Yönetimi**  
-  Kullanıcı bilgilerini güncelleme ve okuma istatistiklerini takip etme.
+**Bookmate** is a **React Native mobile application** that allows readers to manage their libraries digitally, store important quotes from the books they read, and discover new books with **AI support**.
 
 ---
 
-## Teknik Mimari ve Kullanılan Teknolojiler
+## Key Features
 
-Uygulama, modern React Native pratikleri ve bileşen tabanlı mimari üzerine inşa edilmiştir.
+- **Library Management**
+  Searching for books and adding them to a personal library via **Google Books API** integration.
 
-### Genel Teknolojiler
+- **Quote Notebook**
+  Management of book-specific quotes through **CRUD** operations (Create, Read, Update, Delete).
+
+- **AI Recommendations**
+  Personalized book recommendations based on the user's library and reading tastes using the **Groq API (Llama 3 70B)**.
+
+- **Real-Time Synchronization**
+  Instant synchronization of data across all devices using **Cloud Firestore**.
+
+- **Profile Management**
+  Updating user information and tracking reading statistics.
+
+---
+
+## Technical Architecture and Technologies Used
+
+The application is built on modern **React Native** practices and a component-based architecture.
+
+### General Technologies
 - **Framework:** React Native (Functional Components)
-- **Dil:** JavaScript (JSX)
-- **Navigasyon:** React Navigation (Native Stack Navigator)
-- **State Yönetimi:** React Hooks (`useState`, `useEffect`, `useRef`, `useContext`)
+- **Language:** JavaScript (JSX)
+- **Navigation:** React Navigation (Native Stack Navigator)
+- **State Management:** React Hooks (`useState`, `useEffect`, `useRef`, `useContext`)
 
-### Backend & Yapay Zeka
-- **Backend as a Service (BaaS):** Firebase  
-  - Authentication  
+### Backend & AI
+- **Backend as a Service (BaaS):** Firebase
+  - Authentication
   - Cloud Firestore
-- **Yapay Zeka:** Groq API / Llama 3 70B
+- **AI:** Groq API / Llama 3 70B
 
-### Dış Servisler & UI
-- **API İletişimi:** Axios
-- **Dış Servisler:** Google Books API
-- **Görselleştirme:** Lottie Animations, Flash Message
+### External Services & UI
+- **API Communication:** Axios
+- **External Services:** Google Books API
+- **Visualization:** Lottie Animations, Flash Message
 
 ---
 
-## Bilgi Akışı ve Veri Yönetimi
+## Information Flow and Data Management
 
-Uygulama, React'in **Tek Yönlü Veri Akışı (Unidirectional Data Flow)** prensibini takip eder.
+The application follows React's **Unidirectional Data Flow** principle.
 
-- **Props**  
-  Üst bileşenlerden alt bileşenlere veri aktarımı  
-  _(Örn: Kitap detaylarının ekranlar arasında aktarılması)_
 
-- **State**  
-  Bileşen içindeki dinamik verilerin yönetimi  
-  _(Örn: Form girişleri, yükleme ve hata durumları)_
 
-- **Asenkron İşlemler**  
-  API istekleri ve veritabanı işlemleri `async/await` yapısı ile, kullanıcı arayüzünü bloke etmeden gerçekleştirilir.
+- **Props**
+  Data transfer from parent components to child components 
+  *(e.g., passing book details between screens)*.
 
-- **Offline Yönetimi**  
-  Firebase'in yerel önbellekleme özellikleri sayesinde veriler çevrimdışı durumda da görüntülenebilir.
+- **State**
+  Management of dynamic data within components 
+  *(e.g., form inputs, loading and error states)*.
+
+- **Asynchronous Operations**
+  API requests and database operations are performed using the `async/await` structure, ensuring the user interface remains responsive.
+
+- **Offline Management**
+  Data can be viewed offline thanks to **Firebase's local caching** features.
+
+---

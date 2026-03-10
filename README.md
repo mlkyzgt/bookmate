@@ -6,7 +6,7 @@
 
 ## Project Demo
 
-<video src="test-video/bookmate.mp4" width="100%" controls>
+<video src="./test-video/bookmate.mp4" width="100%" controls>
   Your browser does not support the video tag.
 </video>
 

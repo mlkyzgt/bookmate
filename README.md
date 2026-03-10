@@ -6,9 +6,7 @@
 
 ## Project Demo
 
-<video src="./test-video/bookmate.mp4" width="100%" controls>
-  Your browser does not support the video tag.
-</video>
+- Watch the application in action: [here](https://youtube.com/shorts/8ZMuqgfJH2M?feature=share).  
 
 ---
 ## Key Features
